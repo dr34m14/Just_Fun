@@ -1,0 +1,149 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+:root {
+    --first-color: #a82ff8;
+    --border-color: #a7a9ad;
+    --body-font: 'Roboto', sans-serif;
+    --small-font-size: .75rem;
+}
+
+.main {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    position: relative;
+    left: 0;
+    top: 0;
+    padding: 10px;
+    height: 30rem;
+    width: 22rem;
+    box-shadow: 2px 2px 8px;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.form__div1 {
+    position: absolute;
+    top: 4rem;
+    left: 3rem;
+}
+
+.form__div2 {
+    position: absolute;
+    top: 9rem;
+    left: 3rem;
+}
+
+.form__input {
+    border: 3px solid black;
+    border-radius: 5px;
+    padding: 15px;
+    border-width: 2px;
+    width: 15rem;
+    height: 3.7rem;
+    z-index: 1;
+    outline: none;
+}
+
+.form__label {
+    position: absolute;
+    top: 1.3rem;
+    left: 1rem;
+    cursor: auto;
+    transition: .3s;
+    z-index: 10;
+}
+
+.form__labe2 {
+    position: absolute;
+    top: 1.3rem;
+    left: 1rem;
+    cursor: auto;
+    transition: .3s;
+}
+
+.form__input:focus+.form__label {
+    top: -.7rem;
+    left: 1rem;
+    color: var(--first-color);
+    font-size: var(--small-font-size);
+    font-weight: 500;
+    z-index: 10;
+}
+
+.form__input:focus+.form__labe2 {
+    top: -.7rem;
+    left: 1rem;
+    color: var(--first-color);
+    font-size: var(--small-font-size);
+    font-weight: 500;
+    z-index: 10;
+}
+
+.form__input:not(:placeholder-shown).form__input:not(:focus)+.form__label {
+    top: 1.3rem;
+    left: 1rem;
+    font-size: var(--small-font-size);
+    font-weight: 500;
+    z-index: 10;
+}
+
+.form__input:not(:placeholder-shown).form__input:not(:focus)+.form__labe2 {
+    top: -.7rem;
+    left: 1rem;
+    font-size: var(--small-font-size);
+    font-weight: 500;
+    z-index: 10;
+}
+
+.form__input:focus {
+    z-index: 0;
+    border: 3px solid var(--first-color);
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top: 15rem;
+    left: 3rem;
+}
+
+#btn1 {
+    color: white;
+    background-color: rgb(124, 2, 238);
+    border-radius: 5px;
+    margin-top: 24px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px;
+    cursor: pointer;
+    border-width: 1.25px;
+    width: 15rem;
+}
+
+#btn2 {
+    color: rgb(124, 2, 238);
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    border-width: 1px;
+    border-color: rgba(122, 121, 118, .5);
+    width: 15rem;
+}
