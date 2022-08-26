@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+
+
+
+}
+.nav_header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, .3);
+}
+.logoname{
+    margin-left: 10%;
+}
+.hambox{
+    height: 58px;
+    width: 58px;
+    display: flex;
+justify-content: center;
+border-radius: 50%;
+margin-right: 1%;
+cursor: pointer;
+}
+
+.ham{
+    height: 2px;
+    width: 40px;
+    background-color: aqua;
+    top: 25px;
+    position: relative;
+}
+
+.ham::after,.ham::before{
+    content: "";
+    height: 2px;
+    width: 40px;
+    position:absolute;
+    background-color: aqua;
+}
+
+.ham::after{
+    top: -10px;
+    
+}
+.ham::before{
+    top: 10px;
+}
+.hambox:hover{
+    background-color: rgb(8, 158, 158);
+
+}
+.manu{
+    height:27vh ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border: 1px solid red;
+    overflow: hidden;
+    transform: translateY(-100px);
+
+}
+.manu>ul{
+    position: absolute;
+    top: 60px;
+}
+.manu>ul>li{
+    text-decoration: none;
+    list-style: none;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+/* .down-manu{
+    animation: downmanu 1s;
+}
+@keyframes downmanu{
+    0%{
+        transform: translateY(10px);
+    }
+    50%{}
+    100%{}
+} */

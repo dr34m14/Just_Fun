@@ -1,0 +1,24 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.progress{
+    background-color: red;
+    height: 2px;
+    width: 0px;
+    animation: progressGo 1s ease-in-out 0s 1 normal;
+
+}
+@keyframes progressGo{
+    0%{
+        width: 0vw;
+    }
+    
+    50%{
+        width: 50vw;
+    }
+    100%{
+        width:100vw;
+        
+    }
+}

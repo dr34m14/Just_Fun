@@ -1,0 +1,50 @@
+*{
+    padding: 0;
+    margin: 0;
+
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main{
+    position: relative;
+    margin: auto;
+    height: 60vh;
+    width: 60vh;
+    background-image: url("../img/images.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.hand{
+    position: absolute;
+    background-color: black;
+   transform-origin: bottom;
+   border-radius: 50%;
+   left: 48.8%;
+
+}
+#hour{
+    height: 11vh;
+    width: .5vw;
+    top: 29%;
+}
+
+#min{
+    
+    height: 13vh;
+    width: .4vw;
+    top: 25%;
+  
+}
+
+
+#sec{
+    height: 18vh;
+    width: .2vw;
+    top: 18%;
+}
+

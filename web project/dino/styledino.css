@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+.dino{
+    width: 100px;
+    height: 100px;
+    background-color: rebeccapurple;
+    position: absolute;
+    bottom: 0;
+}
+.obstacle{
+    width: 50px;
+    height: 50px;
+    position:absolute;
+    bottom: 0px;
+    background-color: red;
+}

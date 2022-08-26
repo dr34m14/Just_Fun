@@ -1,0 +1,32 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.main{
+    height: 100vh;
+    width: 100vw;
+    background-image: url(skyonl.jpeg);
+    background-size: contain;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+
+}
+.highway{
+    height: 200px;
+    width: 9000%;
+    background-image: url("road10.jpg");
+    background-repeat: repeat-x;
+    position: relative;
+    bottom: -81%;
+    left: 0;
+    animation: sky 10s linear infinite;
+
+}
+@keyframes sky{
+    100%{
+        transform: translateX(-3400px);
+    }
+
+}

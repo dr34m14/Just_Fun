@@ -1,0 +1,139 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow: hidden;
+}
+.main{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url('../img/bak1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover ;
+}
+.triangle{
+    height: 24vw;
+    width: 24vw;
+    /* border-radius: 50%; */
+    border-radius: 21% 79% 18% 82% / 66% 46% 54% 34%   ;
+    margin-left: 5vw;
+    background-image: url('../img/242136571_1278617609226496_6838824354365886122_n.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -5vw;
+    box-shadow: 0vw 1vw 3vw rgba(0, 0, 0, 0.4);
+
+}
+
+
+
+
+
+.info{
+margin-right: 20vw;
+position: relative;
+}
+.name{
+    font-family: 'Lato', sans-serif;
+    font-size: 30px;
+    color: rgb(104, 76, 1);
+}
+.bio{
+    font-family: 'Roboto', sans-serif;
+    color: rgb(0, 0, 0);
+    font-weight: 50px;
+}
+.cursor{
+    display: inline-block;
+    background-color: rgba(0, 0, 0,.7);
+    width: 3px;
+    animation: blink 1s infinite;
+}
+@keyframes blink{
+    0%{
+        background-color: rgba(0, 0, 0,.7);
+    }
+    50%{
+        background-color: transparent;
+    
+    }
+    100%{
+        background-color: rgba(0, 0, 0,.7);
+    }
+}
+.link{
+    width: 13vw;
+    display: flex;
+    position: absolute;
+    top: 20vh;
+    justify-content: space-between;
+
+}
+.facebook{
+cursor: pointer;
+height: 4.5vw;
+width: 4.5vw;
+border-radius: 50%;
+background-image: url('../img/facebook2.jpg');
+background-repeat: no-repeat;
+background-size: cover ;
+background-position-x: 0;
+margin-right: 3vw;
+box-shadow:0vw 0.35vw 2vw rgba(47, 78, 255, 0.8) ;
+}
+.insta{
+    cursor: pointer;
+    height: 4.5vw;
+    width: 4.5vw;
+    border-radius: 50%;
+    background-image: url('../img/Instagram_logo_2016.svg.png');
+    background-repeat: no-repeat;
+    background-size: cover ;
+    background-position-x: 0;
+    box-shadow:0vw 0.35vw 2vw rgba(230, 15, 115, 0.8) ;
+
+}
+.facebook:hover,.insta:hover{
+    height: 5vw;
+width: 5vw;
+}
+@media(max-width:614px){
+    .main{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .triangle{
+    height: 250px;
+    width: 250px;
+margin-left: 0;
+    }
+
+    .info{
+        margin-right: 0;
+        margin-top: 20px;
+
+        }
+        @media(max-width:350px){
+            .main{
+                flex-direction: column;
+                justify-content: center;
+            }
+            .triangle{
+            height: 200px;
+            width: 200px;
+        margin-left: 0;
+            }
+        
+            .info{
+                margin-right: 0;
+                margin-top: 20px;
+        
+                }
+        }
+}
