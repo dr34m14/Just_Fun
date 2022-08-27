@@ -14,6 +14,22 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    position: relative;
+    overflow: hidden;
+}
+
+.canvas1 {
+
+
+    z-index: 0;
+
+
+}
+
+.beffor_canvas {
+    position: absolute;
+    top: 5;
+    z-index: 1;
 }
 
 .lay {
@@ -50,16 +66,20 @@
 
 .cursor {
     display: inline-block;
-    background-color: rgba(0, 0, 0, .7);
+    background-color: rgba(101, 7, 124, 0.7);
     width: 3px;
     animation: blink 2s infinite;
 }
 
 .title {
     font-family: 'Roboto', sans-serif;
-    color: rgb(164, 4, 204);
+    color: rgb(69, 1, 90);
+    background-color: white;
     font-size: x-large;
     margin-bottom: 25px;
+    border-radius: 5px;
+    animation: boxshadow 7s linear infinite alternate-reverse;
+
 }
 
 @keyframes boxshadow {
