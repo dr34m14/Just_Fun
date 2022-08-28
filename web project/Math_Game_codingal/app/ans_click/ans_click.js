@@ -6,6 +6,7 @@ for (let i = 0; i < box_click.length; i++) {
 
             console.log("ans right")
             make_ques();
+            score();
         }else{
             alert("worng ans");
             console.log("worng ans");

@@ -21,15 +21,16 @@
 </head>
 
 <body>
-    <div class="window">
-
+    <div class="window"><canvas id="canvas1"></canvas>
         <div class="go_home">
             <a href="../index.html">
                 <button class="btn">Home</button>
             </a>
         </div>
 
-
+        <div class="score_div">
+            Right Ans:<span id="right_ans">00</span>
+        </div>
         <div class="main_thems">
 
 
@@ -48,7 +49,7 @@
                 </div>
                 <div class="two_add">
 
-                    <div class="ans_box" ><span class="ans" id="box3"></span></div>
+                    <div class="ans_box"><span class="ans" id="box3"></span></div>
                     <div class="ans_box"><span class="ans" id="box4"></span></div>
                 </div>
 
@@ -61,6 +62,9 @@
     </div>
     <script src="../app/make_ques/make_ques_2_2dig.js"></script>
     <script src="../app/ans_click/ans_click.js"></script>
+    <script src="../app/math_matrix/math_matrix.js"></script>
+    <script src="../app/score/score.js"></script>
+
 
 </body>
 
