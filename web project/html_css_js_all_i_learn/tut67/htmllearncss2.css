@@ -1,0 +1,33 @@
+#theoldNINJA{
+    color: aquamarine;background-color: black;
+    font-size: 20px;
+    line-height: 1em;
+    font-weight: bold;
+    font-style: italic;
+    border-color: chartreuse;
+    border-style: solid;
+}
+/* css is too hard   */
+#namebox{
+    border:2px solid red;
+    
+}
+.namecolour{
+    color:aquamarine;
+    background-color: black;
+    font-size:medium;
+
+}
+#kakashi{
+    background-color: rgb(10, 223, 123);
+    border-color: black;
+    border-style: solid;
+    border-radius: 4px;
+}
+#kakashibio{
+    height: 300px;
+    color: red;
+    background-image: url(https://www.explica.co/wp-content/uploads/2020/11/kakashi-khatake-naruto-758x447.jpg);
+    background-repeat: no-repeat;
+    background-position:center;
+}
