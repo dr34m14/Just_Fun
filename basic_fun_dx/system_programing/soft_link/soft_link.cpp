@@ -10,7 +10,7 @@ int main()
 //0x0 for file
 //0x1 for folder
 // 2nd peramitar is targect file
-    b_file = CreateSymbolicLink("./link.txt","./anime.txt",0x0);
+    b_file = CreateSymbolicLink("./link.txt","./anime.txt",0);
     
 
     

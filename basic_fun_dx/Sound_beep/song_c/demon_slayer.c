@@ -42,36 +42,27 @@
 #define AS5 932.33
 int main()
 {
-    Beep(C4, 1500);
+    Beep(C4, 300);
 
-    Beep(E4, 1000);
-    Beep(D4, 1000);
+    Beep(B3, 300);
     Beep(C4, 1000);
+    Beep(E4, 1000);
 
-    Beep(E4, 1000);
-    Beep(D4, 1000);
-    Beep(C4, 1000);
-
-    Beep(D4, 1000);
-    Beep(E4, 1000);
-    Beep(D4, 1000);
-    Beep(C4, 1000);
-    Beep(A3, 1000);
-Sleep(1000);
-    Beep(A3, 1000);
-
-    Beep(C4, 1000);
-    Beep(D4, 1000);
-    Beep(E4, 1000);
-    Beep(D4, 1000);
-    Beep(C4, 1000);
+    Beep(B3, 1000);
     Beep(A3, 1000);
     Beep(G3, 1000);
 
-    Beep(G3, 1000);
     Beep(A3, 1000);
     Beep(C4, 1000);
-    Beep(A3, 1000);
-    Beep(C4, 1000);
+    Beep(E4, 1000);
+    Beep(F4, 1000);
+    Beep(E4, 1000);
+
+    Beep(F4, 1000);
+
+    Beep(A4, 1000);
+    Beep(E4, 1000);
+
+
     return 0;
 }
