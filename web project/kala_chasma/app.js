@@ -1,11 +1,12 @@
 let belly = document.getElementById("belly");
+let body = document.querySelector("body")
 // let chasma = document.getElementById("chasma");
-let myaudio = document.getElementById("my_audio");
 let start = 420;
 let end = 600;
 let now_y = start;
+let up_down;
 
-
+// let myaudio = document.getElementById("my_audio");
 
 
 
@@ -15,13 +16,13 @@ function change_belly(n) {
 function dance() {
 
     setTimeout(() => {
-        console.log('9000 s end')
+        // console.log('9000 s end')
 
 
 
 
-        setInterval(() => {
-            console.log(now_y)
+        up_down= setInterval(() => {
+            // console.log(now_y)
             change_belly(now_y)
 
             if (now_y == start) {
@@ -57,9 +58,35 @@ function dance() {
 
 }
 
+function music() {
+    let audio = new Audio("./kala_chasma2.mp3")
+    audio.play()
 
+    audio.addEventListener('ended', function () {
+        // console.log("audio stoped")
+        clearInterval(up_down);
+        main_body_click()
+    })
+}
+
+
+function all() {
+    dance()
+    music()
+}
+
+function main_body_click(){
+            body.addEventListener("click", () => {
+            // console.log("body clicked")
+            all();
+        }, { once: true })
+
+}
 
 window.onload = function () {
-    dance()
-    myaudio.play();
+    setTimeout(() => {
+        main_body_click();
+    }, 300);
+
+
 }
